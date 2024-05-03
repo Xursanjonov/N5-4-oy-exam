@@ -17,10 +17,8 @@
   </head>
   <body>
     <!-- Headers -->
-    <header id="header" class="header">
-      <div
-        class="header-top hidden py-2 lg:flex xl:flex 2xl:flex font-light items-center justify-center gap-14 bg-black text-white"
-      >
+    <header id="header" class="header group w-[1519px] mx-auto">
+      <div class="header-top hidden py-2 lg:flex xl:flex 2xl:flex font-light items-center justify-center gap-14 bg-black text-white">
         <div class="flex">
           <p>
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -35,9 +33,7 @@
           <option value="rus">RUS</option>
         </select>
       </div>
-      <nav
-        class="header-bottom flex lg:px-16 lg:py-4 shadow-lg items-center justify-between px-8"
-      >
+      <nav class="header-bottom flex lg:px-16 lg:py-4 shadow-lg items-center justify-between px-8">
         <a
           href="/"
           class="logo px-4 py-1.5 font-bold text-2xl hidden md:block lg:block xl:block 2xl:block"
@@ -93,21 +89,24 @@
     <!-- Headers end -->
 
     <!-- Hero -->
-    <main id="hero" class="w-[89%] mx-auto my-10 flex items-center justify-center gap-16 bg-black text-white" >
-      <div class="flex flex-col gap-2">
+    <main id="hero" class="w-[1350px] mx-auto my-10 flex items-center justify-start gap-16 bg-black text-white" >
+      <div class="ms-20 flex flex-col gap-2">
         <div class="flex items-center gap-5">
           <img src="./Images//apple-logo.png" alt="" />
           <p>iPhone 14 Series</p>
         </div>
         <p class="w-[280px] font-bold text-5xl">Up to 10% off Voucher</p>
-        <p class="w-[280px] font-bold text-5xl">ShopNow</p>
+        <a href="./HTML/shop.html" class="w-[90px] flex items-center gap-2 font-semibold border-b text-xl text-white">
+          ShopNow
+          <i class="mt-2 fa-solid fa-arrow-right"></i>
+        </a>
       </div>
       <figure class="flex"><img src="./Images/hero-img.png" alt="" /></figure>
     </main>
     <!-- Hero end -->
 
     <!-- Categories -->
-    <section id="categories" class="categories px-20 py-12 grid grid-cols-1">
+    <section id="categories" class="categories w-[1480px] mx-auto px-20 py-12 grid grid-cols-1">
       <div class="flex flex-col gap-3">
         <div class="flex items-center justify-start gap-5 text-orange-500">
           <img src="./Images/section-icon.png" alt="" />
@@ -169,37 +168,72 @@
     <!-- Categories end -->
 
     <!-- Ouer Products -->
-    <section id="best" class="w-100">
-      <div class="container-best bg-white">
-        <div class="flex items-center justify-start gap-5 text-orange-500">
+    <section id="ourProducts" class="w-[1480] mx-auto flex flex-col items-center gap-14">
+        <div class="w-[1350px] mx-auto flex items-center justify-start gap-5 text-orange-500">
           <img src="./Images/section-icon.png" alt="" />
           <h5 class="font-bold text-lg">Our Products</h5>
         </div>
-        <div id="bestcardss" class="bestCards xl:grid-cols-4 md:grid-cols-2">
-          <!-- <div class="bestCard">
-                    <img class="img1" src="./Images/three img one.png" alt="">
-                    <p class="titlesImg">Nike Air Max 270 React</p>
-                    <img class="priceImg" src="./Images/reting.svg"/>
-                    <div class="texts">
-                        <p class="p2">$299,43</p>
-                        <p class="p3 text-red-500"><s class="text-gray-500">$534,33</s> 24% Off</p>
-                    </div>
-                </div> -->
-        </div>
-        <button
-          class="flex items-center justify-center mx-auto px-5 py-2 bg-orange-600 font-bold text-white rounded-md"
-        >
+        <div id="ourCards" class="w-[1350px] mx-auto items-center justify-center gap-14 grid xl:grid-cols-4 md:grid-cols-2"></div>
+        <button class="flex items-center justify-center mx-auto px-5 py-2 bg-orange-600 font-bold text-white rounded-md">
           View All Products
         </button>
-      </div>
     </section>
     <!-- Our Products end -->
 
+    <!-- Music -->
+    <section class="lg:w-[1350px] xl:w-[1350px] 2xl:w-[1350px] my-20 mx-auto px-20 py-10 music grid grid-cols-1 lg:grid-cols-2 items-center bg-black text-white">
+      <div class="music-card-title flex flex-col justify-center gap-10">
+        <p class="text-green-500 font-semibold">Categories</p>
+        <h1 class="text-6xl font-semibold">Enhance Your <br> Music Experience</h1>
+        <ul class="flex items-center justify-start gap-4">
+          <li class="w-[80px] h-[80px] flex flex-col items-center justify-center bg-white text-black font-semibold rounded-full"> <span class="font-bold text-xl">23</span> Hours </li>
+          <li class="w-[80px] h-[80px] flex flex-col items-center justify-center bg-white text-black font-semibold rounded-full"> <span class="font-bold text-xl">05</span> Days </li>
+          <li class="w-[80px] h-[80px] flex flex-col items-center justify-center bg-white text-black font-semibold rounded-full"> <span class="font-bold text-xl">59</span> Minutes </li>
+          <li class="w-[80px] h-[80px] flex flex-col items-center justify-center bg-white text-black font-semibold rounded-full"> <span class="font-bold text-xl">35</span> Seconds </li>
+        </ul>
+        <button class="w-[100px] py-2 text-white bg-green-500">Buy Now!</button>
+      </div>
+      <div class="music-card-img">
+        <img src="./Images/music.png" alt="">
+      </div>
+    </section>
+    <!-- Music end -->
+
+    <!-- Featured -->
+    <section id="featured" class="w-[1350px] mx-auto flex flex-col">
+      <div class="my-8 hidden items-center justify-start gap-5 text-orange-500"> <img src="./Images/section-icon.png" /> <h5 class="font-bold text-lg">Featured</h5> </div>
+        <h2 class="mb-10 hidden font-bold text-5xl">New Arrival</h2>
+      <div class="featured-card xl:w-[1350px] 2xl:w-[1350px] mx-auto my-20 flex items-center justify-between">
+        <div class="featured-card-1 p-7 flex flex-col items-start justify-end gap-2 text-white bg-black rounded-lg">
+          <h2 class="text-3xl font-bold">Play Station 5</h2>
+          <p class="text-lg">Black and White version of the PS5 <br> coming out on sale.</p>
+          <a href="./HTML/shop.html" class="font-medium border-b"> ShopNow </a>
+        </div>
+        <div class="featured-card-two grid grid-cols-1 gap-5 items-center">
+          <div class="featured-card-2 w-[640px] h-[320px] p-5 flex flex-col items-start justify-end gap-2 text-white bg-black rounded-lg">
+            <h2 class="text-xl font-bold">Women's Collections</h2>
+            <p class="text-lg">Featured woman collections that <br> give you another vibe.</p>
+            <a href="./HTML/shop.html" class="font-medium text-md border-b"> ShopNow </a>
+          </div>
+          <div class="w-[640px] flex items-center justify-between">
+              <div class="featured-card-4 w-[300px] h-[320px] p-5 flex flex-col items-start justify-end gap-3 bg-black text-white rounded-lg">
+                <h2 class="text-lg font-bold">Speakers</h2>
+                <p class="text-sm">Amazon wireless speakers</p>
+                <a href="./HTML/shop.html" class="font-medium border-b"> ShopNow </a>
+              </div>
+              <div class="featured-card-5 w-[300px] h-[320px] p-5 flex flex-col items-start justify-end gap-3 text-white bg-black rounded-lg">
+                <h2 class="text-lg font-bold">Perfume</h2>
+                <p class="text-sm">GUCCI INTENSE OUD EDP</p>
+                <a href="./HTML/shop.html" class="font-medium border-b"> ShopNow </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured end -->
+
     <!-- Three cards -->
-    <section
-      id="threeCards"
-      class="threeCards grid grid-cols-1 sm:px-10 md:px-10 lg:px-20 xl:px-20 2xl:px-20 lg:grid-cols-3 mx-auto my-24 gap-8"
-    >
+    <section class="w-[1480px] grid grid-cols-1 sm:px-10 md:px-10 lg:px-20 xl:px-20 2xl:px-20 lg:grid-cols-3 mx-auto my-24 gap-8" id="threeCards">
       <div
         class="threeCards-card-1 flex flex-col items-center justify-center gap-1"
       >
@@ -231,7 +265,7 @@
     <!-- Three Cards end -->
 
     <!-- Footer -->
-    <footer id="footer" class="w-full footer bg-black text-white">
+    <footer id="footer" class="footer w-[1519px] grid mx-auto bg-black text-white">
       <div
         class="footer-top md:grid-cols-2 lg:py-24 lg:flex items-start justify-center lg:gap-24 grid grid-cols-1 sm:ps-[10rem] lg:ps-0 py-4"
       >
