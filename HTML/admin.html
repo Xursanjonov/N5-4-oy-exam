@@ -15,7 +15,7 @@
   <body>
     
     <!-- Headers -->
-    <header id="header" class="header w-[1519px] mx-auto">
+    <header id="header" class="header w-[1536px] mx-auto">
       <div class="header-top hidden py-2 lg:flex xl:flex 2xl:flex font-light items-center justify-center gap-14 bg-black text-white">
         <div class="flex">
           <p> Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! </p>
@@ -49,10 +49,65 @@
     </header>
     <!-- Headers end -->
 
-    <main class="w-[1519px] mx-auto">Admin</main>
+    <main class="w-[1536px] mx-auto my-20 flex flex-col">
+        <ul class="w-[1375px] mx-auto bg-gray-300 flex items-center justify-between">
+            <li class="py-2 text-gray-500 font-semibold">Home / <span class="text-black">My Account</span> </li>
+            <li class="py-2 text-black font-semibold">Welcome! <span class="text-orange-500">Md Rimel</span></li>
+        </ul>
+        <div class="w-[1536px] mx-auto my-20 px-20 flex items-start justify-between">
+            <ul class="w-[300px] flex flex-col gap-5">
+                <li class="flex flex-col">
+                    <p class="mb-3 font-medium text-black">Manage My Account</p>
+                    <ul class="flex flex-col items-start gap-2 ms-9 font-semibold text-gray-500">
+                        <li class="text-orange-500">My Profile</li>
+                        <li>Address Book</li>
+                        <li>My Payment Options</li>
+                    </ul>
+                </li>
+                <li class="flex flex-col">
+                    <p class="mb-3 font-medium text-black">My Orders</p>
+                    <ul class="flex flex-col items-start gap-2 ms-9 font-semibold text-gray-500">
+                        <li>Address Book</li>
+                        <li>My Payment Options</li>
+                    </ul>
+                </li>
+                <li class="font-medium text-black">My WishList</li>
+            </ul>
+            <div class="w-[870px] h-[630px] shadow-lg flex flex-col items-start justify-center gap-5 rounded-xl">
+                <h2 class="ms-40 text-orange-500 text-2xl font-semibold">Edit Your Profile</h2>
+                <form class="w-[550px] mx-auto form-control flex flex-col gap-5">
+                    <div class="flex gap-8">
+                        <label class="fname">Firs Name
+                            <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="text" id="fname" placeholder="Md" required>
+                        </label>
+                        <label class="lname">Last Name
+                            <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="text" id="lname" placeholder="Rimel" required>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <label class="email">Email
+                            <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="email" id="email" placeholder="rimel1111@gmail.com" required>
+                        </label>
+                        <label class="email">Address
+                            <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="text" id="address" placeholder="Kingston, 5236, United State" required>
+                        </label>
+                    </div>
+                    <label class="email flex flex-col items-start gap-3">Password Changes
+                        <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="password" id="currentPassword" placeholder="Current Passwod" required>
+                        <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="password" id="newPassword" placeholder="New Passwod" required>
+                        <input class="w-[100%] px-2 py-1 border-2 border-gray-400 rounded-md" type="password" id="confirmNewPassword" placeholder="Confirm New Passwod" required>
+                    </label>
+                    <div class="flex items-center justify-end gap-5">
+                        <button class="btn px-5 py-1.5 font-semibold">Cancel</button>
+                        <button class="btn px-5 py-1.5 font-semibold rounded-md text-white bg-orange-500">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
     
     <!-- Footer -->
-    <footer id="footer" class="footer w-[1519px] grid mx-auto bg-black text-white">
+    <footer id="footer" class="footer w-[1536px] grid mx-auto bg-black text-white">
       <div class="footer-top md:grid-cols-2 lg:py-24 lg:flex items-start justify-center lg:gap-24 grid grid-cols-1 sm:ps-[10rem] lg:ps-0 py-4">
         <ul class="h-[350px] flex flex-col justify-center gap-2 font-semibold">
           <li class="py-2 text-3xl"> <a href="/" class="logo font-bold">Exclusive</a> </li>
