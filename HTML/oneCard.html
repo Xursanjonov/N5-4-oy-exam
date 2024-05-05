@@ -12,10 +12,8 @@
 <body>
 
     <!-- Headers -->
-    <header id="header" class="header">
-      <div
-        class="header-top hidden py-2 lg:flex xl:flex 2xl:flex font-light items-center justify-center gap-14 bg-black text-white"
-      >
+    <header id="header" class="header w-[1519px] mx-auto">
+      <div class="header-top hidden py-2 lg:flex xl:flex 2xl:flex font-light items-center justify-center gap-14 bg-black text-white">
         <div class="flex">
           <p>
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
@@ -30,9 +28,7 @@
           <option value="rus">RUS</option>
         </select>
       </div>
-      <nav
-        class="header-bottom flex lg:px-16 lg:py-4 shadow-lg items-center justify-between px-8"
-      >
+      <nav class="header-bottom flex lg:px-16 lg:py-4 shadow-lg items-center justify-between px-8">
         <a
           href="/"
           class="logo px-4 py-1.5 font-bold text-2xl hidden md:block lg:block xl:block 2xl:block"
@@ -66,19 +62,14 @@
             >Sign in</a
           >
         </div>
-        <div
-          class="nav-icons hidden md:flex lg:flex xl:flex 2xl:flex items-center justify-center gap-6 text-lg"
-        >
+        <div class="nav-icons hidden md:flex lg:flex xl:flex 2xl:flex items-center justify-center gap-6 text-lg">
           <form class="w-[250px] flex">
-            <input
-              type="search"
-              class="w-full border-[2px] text-black italic font-semibold py-1.5 px-3 rounded-lg text-sm"
-              placeholder="What are you looking for?"
-            />
+            <input type="search" class="w-full border-[2px] text-black italic font-semibold py-1.5 px-3 rounded-lg text-sm" placeholder="What are you looking for?"/>
             <i class="fa-solid fa-search p-1 mt-1.5"></i>
           </form>
-          <a href="./HTML/like.html" class="fa-solid fa-heart"></a>
-          <a href="./HTML/shop.html" class="fa-solid fa-shopping-cart"></a>
+          <a href="./like.html" class="fa-solid fa-heart"></a>
+          <a href="./shop.html" class="fa-solid fa-shopping-cart"></a>
+          <a href="./sign-in.html" class="fa-solid fa-user"></a>
         </div>
         <button class="block md:hidden lg:hidden xl:hidden 2xl:hidden">
           <i class="fa-solid fa-bars"></i>
@@ -87,25 +78,84 @@
     </header>
     <!-- Headers end -->
     
-    <!-- Clicked Card -->
-    <div id="clicked" class="container-clicked">
-        <div class="clicked-Card">
-            <img class="clicked-img rounded-tl-lg rounded-bl-lg" src="../Images/three img one.png" alt="">
-            <div class="clicked-title">
-                <p class="clicked-name">Nike Air Max 270 React</p>
-                <p class="clicked-Price">$299,43</p>
-                <p class="description">
-                  Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her.
-                  Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...
-                </p>
-            </div>
+    <!-- Product Details Card -->
+    <section class="product-details w-[1519px] my-10 mx-auto flex items-center justify-center gap-4">
+      <div class="w-[800px] h-[600px] flex items-center justify-center gap-5">
+        <div class="w-[170px] h-[600px] flex flex-col items-center justify-center gap-4">
+          <img class="w-[170px] h-[138px] rounded-tl-lg rounded-bl-lg" src="../Images/three img one.png">
+          <img class="w-[170px] h-[138px] rounded-tl-lg rounded-bl-lg" src="../Images/three img one.png">
+          <img class="w-[170px] h-[138px] rounded-tl-lg rounded-bl-lg" src="../Images/three img one.png">
+          <img class="w-[170px] h-[138px] rounded-tl-lg rounded-bl-lg" src="../Images/three img one.png">
         </div>
-    </div>
-    <!-- Clicked Card end -->
+        <div class="w-[560px] h-[600px] bg-gray-100 flex items-center justify-center rounded-md">
+          <img class="w-[540px] h-[600px]" src="../Images/three img one.png">
+        </div>
+      </div>
+      <div class="product-details-title w-[420px] px-2 flex flex-col gap-6">
+        <h3 class="text-2xl font-bold">Havic HV G-92 Gamepad</h3>
+        <div class="w-[550px] flex items-center gap-3">
+          <ul class="flex items-start gap-1">
+            <li class="text-orange-500 fa-solid fa-star"></li>
+            <li class="text-orange-500 fa-solid fa-star"></li>
+            <li class="text-orange-500 fa-solid fa-star"></li>
+            <li class="text-orange-500 fa-solid fa-star"></li>
+            <li class="text-gray-300 fa-solid fa-star"></li>
+          </ul>
+          <p>(150 Reviews) | <span class="text-green-500 font-semibold">In Stock</span></p>
+        </div>
+        <h4 class="text-xl">$192.00</h4>
+        <p class="w-[390px]">
+          PlayStation 5 Controller Skin High quality vinyl with air channel
+          adhesive for easy bubble free install & mess free removal Pressure sensitive.
+        </p>
+        <hr class="h-[3px] bg-gray-200 rounded-xl">
+        <ul class="text-xl font-semibold flex items-center gap-4">
+          Colours:
+          <li class="w-[18px] h-[18px] border-2 border-black bg-blue-200 rounded-full"></li>
+          <li class="w-[18px] h-[18px] border-2 border-orange-500 bg-orange-500 rounded-full"></li> 
+        </ul>
+        <ul class="flex items-center gap-2 font-semibold">
+          <li class="mr-3 text-2xl">Size:</li>
+          <li class="w-[30px] h-[30px] text-sm flex items-center justify-center border-2 border-gray-400 rounded-md">XS</li>
+          <li class="w-[30px] h-[30px] text-sm flex items-center justify-center border-2 border-gray-400 rounded-md">S</li>
+          <li class="w-[30px] h-[30px] text-sm flex items-center justify-center border-2 border-gray-400 bg-orange-500 text-white rounded-md">M</li>
+          <li class="w-[30px] h-[30px] text-sm flex items-center justify-center border-2 border-gray-400 rounded-md">L</li>
+          <li class="w-[30px] h-[30px] text-sm flex items-center justify-center border-2 border-gray-400 rounded-md">XL</li>
+        </ul>
+        <div class="w-[380px] flex items-center justify-between gap-4">
+          <ul class="flex items-center justify-center">
+            <li class="w-[40px] p-1 text-center border-2 border-gray-400 font-bold rounded-s-md">-</li>
+            <li class="w-[80px] p-1 text-center font-bold border-2 border-gray-400">2</li>
+            <li class="w-[40px] p-1 text-center border-2 border-gray-400 font-bold bg-orange-500 text-white rounded-e-md">+</li>
+          </ul>
+          <button class="px-5 py-1 font-semibold rounded-md border-2 border-orange-500 text-white bg-orange-500">Buy Now</button>
+          <i class="p-1.5 border-2 border-gray-400 rounded-md fa-regular fa-heart"></i>
+        </div>
+        <div class="flex flex-col">
+          <div class="py-2 px-4 flex items-center justify-start gap-5 border-2 border-gray-400 rounded-t-lg">
+            <i class="text-2xl fa-solid fa-user"></i>
+            <div class="flex flex-col justify-center font-semibold">
+              <p class="text-lg">Free Delivery</p>
+              <p class="text-sm">Enter your postal code for Delivery Availability</p>
+            </div>
+          </div>
+          <div class="py-2 px-4 flex items-center justify-start gap-5 border-2 border-gray-400 rounded-b-lg">
+            <i class="text-2xl fa-solid fa-user"></i>
+            <div class="flex flex-col justify-center font-semibold">
+              <p class="text-lg">Return Delivery</p>
+              <p class="text-sm">Free 30 Days Delivery Returns. Details</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Details Card end -->
 
     <!-- Footer -->
-    <footer id="footer" class="w-full footer bg-black text-white">
-      <div class="footer-top md:grid-cols-2 lg:py-12 lg:flex items-start justify-center lg:gap-24 grid grid-cols-1 sm:ps-[10rem] lg:ps-0 py-4">
+    <footer id="footer" class="footer w-[1519px] grid mx-auto bg-black text-white">
+      <div
+        class="footer-top md:grid-cols-2 lg:py-24 lg:flex items-start justify-center lg:gap-24 grid grid-cols-1 sm:ps-[10rem] lg:ps-0 py-4"
+      >
         <ul class="h-[350px] flex flex-col justify-center gap-2 font-semibold">
           <li class="py-2 text-3xl">
             <a href="/" class="logo font-bold">Exclusive</a>
@@ -154,16 +204,16 @@
           </li>
           <li class="py-2 text-lg">Save $3 with App New User Only</li>
           <div class="flex gap-3">
-            <img class="w-[95px]" src="../Images/qr-code.png" alt="" />
+            <img class="w-[95px]" src="./Images/qr-code.png" alt="" />
             <div class="flex flex-col gap-2 items-center justify-center">
               <img
                 class="w-[115px]"
-                src="../Images/GooglePlay.png"
+                src="./Images/GooglePlay.png"
                 alt="Google Play"
               />
               <img
                 class="w-[115px]"
-                src="../Images/AppStore.png"
+                src="./Images/AppStore.png"
                 alt="App Store"
               />
             </div>
